@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor student as g
+package el-Campus {
+  actor Chef as c
+  actor "Food Critic" as fc
+}
+package UNIVERSAL PASSPORT {
+  usecase "課題提出" as UC1
+  usecase "学内掲示板" as UC2
+  usecase "カレンダー" as UC3
+  usecase "UNIVERSAL PASSPORT" as UC4
+}
+fc --> UC4
+g --> UC1
+g --> UC2
+g --> UC3
+@enduml
